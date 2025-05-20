@@ -7,48 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PZ</title>
 </head>
-<body>
-<div class="header-container">
-    <div class="d-flex align-items-center justify-content-between px-4 py-2">
-        <div class="d-flex align-items-center">
-            <img src="/img/PZ.png" id="logo" class="me-3">
-            <b id="fontsl" class="d-none d-md-block">Notícias inúteis, e do mundo inteiro.</b>
+<body class="d-flex flex-column min-vh-100">
+    <header class="header-container">
+        <div class="d-flex align-items-center justify-content-between px-4 py-2">
+            <div class="d-flex align-items-center">
+                <img src="/img/PZ.png" id="logo" class="me-3">
+                <b id="fontsl" class="d-none d-md-block">Notícias inúteis, do mundo inteiro.</b>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">PZ News</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Notícias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Política</a></li>
+                                    <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                                    <li><a class="dropdown-item" href="#">Entretenimento</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>   
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">PZ News</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Notícias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Categorias
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Política</a></li>
-                                <li><a class="dropdown-item" href="#">Tecnologia</a></li>
-                                <li><a class="dropdown-item" href="#">Entretenimento</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+    </header>
+
+    <main class="container-fluid flex-grow-1 py-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card news-card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título da Notícia</h5>
+                        <p class="card-text">Resumo breve da notícia que será exibido no card.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Publicado há 3 horas</small>
+                    </div>
                 </div>
             </div>
-        </nav>   
-    </div>
+            
+            <div class="col">
+                <div class="card news-card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Outra Notícia</h5>
+                        <p class="card-text">Descrição mais longa que pode ocupar mais espaço no card.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Publicado ontem</small>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
 
-</div>
+    <footer class="footer mt-auto py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="/img/PZ.png" id="footer-logo" class="me-2">
+                <span class="text-white">PZ News</span>
+            </div>
+            <small class="text-white-50">© 2023 Todos os direitos reservados</small>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </html>
