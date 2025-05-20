@@ -28,3 +28,15 @@ body{
     background-color: #6699ff;
     width: 30%;
 }
+.body-main{
+    height: 829px;
+    width: 75%;
+}
+.card-color{
+    height:50px;
+    width: 70px;
+    background-color: black;
+}
+.res-img{
+    height: 150px;
+}
